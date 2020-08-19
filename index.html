@@ -11,24 +11,55 @@
 
     <style>
     	.contain {object-fit: contain;}
+    	
+    	.image-cropper {
+    		width: 200px;
+    		height: 200px;
+    		position: relative;
+    		overflow: hidden;
+    		border-radius: 50%;
+    	}
+
+    	.profile {
+    		display: inline;
+    		margin: 0 auto;
+    		margin-left: -50%;
+    		height: 100%;
+    		width: auto;
+    	}
+
+    	.center {
+    		display: flex;
+    		justify-content:center;
+    		align-items: center;
+    		transform: translate(0%, 75%);
+    	
+    	}
+
+
     </style>
     
     <body>
     <div class = "topnav">
     	<a class="active" href="https://github.com/SeraW">Github</a>
     	<a href="#articles">Articles</a>
-    	<a href="https://seraw.github.io/website/SeraWResume.pdf" target="_blank">Resume</a>
+    	<a href="SeraWResume.pdf" target="_blank">Resume</a>
  		<a href="mailto:sera.wong@live.ca">Contact</a>
+ 	</div>
 
-        <h1>Hi, I'm Sera!</h1>
 
     <main>
     	<section id= "body">
-    		<div class ="section-inner">
-    			<img class = "contain" src="https://iamserablog.files.wordpress.com/2020/05/received_971079219702927.jpeg" style="width:200px;height:400px">
-    		</div>
+    		<div class = "center">
+	    		<div class ="image-cropper">
+	    			<img class = "profile" src="https://iamserablog.files.wordpress.com/2020/05/received_971079219702927.jpeg"> 
+	    		</div>
+	    		<h1>wassup i'm Sera</h1>
+	    	</div>
     	</section>
     </main>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
